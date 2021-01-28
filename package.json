@@ -72,10 +72,5 @@
       "yarn type-check"
     ]
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn type-check && yarn lint ."
-    }
-  },
   "license": "MIT"
 }
