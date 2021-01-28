@@ -2,6 +2,7 @@ import React from 'react';
 import { Progress, Skeleton } from 'antd';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Link from 'next/link';
 
 type Props = {
@@ -84,9 +85,10 @@ const Item = (props: Props) => {
         </div>
         <div className='flex justify-center w-full'>
           {/* <img src={data.image} className='h-20 w-32' loading="lazy" /> */}
-          <div className='h-20 w-32 relative'>
+          <LazyLoadImage src={data.image} width={80} height={113} effect='blur' alt='image' />
+          {/* <div className='h-20 w-32 relative'>
             <Image src={data.image} layout='fill' />
-          </div>
+          </div> */}
         </div>
         <div className='text-gray500 font-poppins font-light text-xs mt-1 h-4.5'>{data.type}</div>
         <MarketName

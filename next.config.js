@@ -4,8 +4,8 @@
 
 // module.exports = withBundleAnalyzer()
 
-module.exports = {
-  images: {
-    domains: ['steamcommunity-a.akamaihd.net']
-  }
-};
+// module.exports = {
+//   images: {
+//     domains: ['steamcommunity-a.akamaihd.net']
+//   }
+// };
